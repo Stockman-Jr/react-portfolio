@@ -1,0 +1,36 @@
+.Social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 999;
+    position: sticky;
+    font-weight: bold;
+    align-items: center;
+}
+
+.Social a {
+    color: #838282;
+    margin: 10px;
+}
+
+.Social a:hover {
+    color: rgb(17, 179, 179);
+}
+
+.Social svg {
+    font-size: 34px;
+}
+
+.CVLink {
+padding: 4px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #838282;
+    margin: 8px;
+    border-radius: 10px;
+
+}
+
+.CVLink:hover {
+    border: 2px solid rgb(17, 179, 179);
+}
