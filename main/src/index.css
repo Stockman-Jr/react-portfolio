@@ -1,3 +1,9 @@
+:root {
+  --grad-1: rgb(71,119,179);
+  --grad-2: rgb(122,200,87);
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +17,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.gradient1 {
+  stop-color: var(--grad-1);
+  transition: all .3s ease-in-out;
+}
+
+.gradient2 {
+  stop-color: var(--grad-2);
+  transition: all .3s ease-in-out;
+}
+
+[data-name=corner-bottom-right],[data-name=corner-top-left] {
+  opacity: 1;
+  width: 300px;
+  height: 300px;
+  transition: all ease-in-out;
+  position: absolute
+}
+
+[data-name=corner-top-left] {
+  top: 0;
+  left: 0;
+}
+
+[data-name=corner-bottom-right] {
+  bottom: 0;
+  right: 0;
+}
+

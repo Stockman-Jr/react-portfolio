@@ -3,7 +3,8 @@
     flex-direction: row;
     justify-content: flex-end;
     z-index: 999;
-    position: sticky;
+    position: fixed;
+    right: 10px;
     font-weight: bold;
     align-items: center;
 }
