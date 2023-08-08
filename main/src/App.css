@@ -4,3 +4,19 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0d6e61;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #292929b2;
+  border-radius: 10px;
+}
+
+
