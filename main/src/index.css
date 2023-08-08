@@ -29,12 +29,12 @@ code {
   transition: all .3s ease-in-out;
 }
 
-[data-name=corner-bottom-right],[data-name=corner-top-left] {
+[data-name=corner-bottom-right], [data-name=corner-top-left] {
   opacity: 1;
   width: 300px;
   height: 300px;
   transition: all ease-in-out;
-  position: absolute
+  position: absolute;
 }
 
 [data-name=corner-top-left] {

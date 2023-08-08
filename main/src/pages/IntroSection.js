@@ -107,7 +107,7 @@ function IntroSection(props) {
               I'm a freshly baked junior software developer with an education in
               full-stack development. I love combining my passion for art &
               design with my technical skills in order to create visually
-              impactful designs with a UX focus.
+              impactful designs with focus on user experience.
             </span>
           </div>
         </div>
