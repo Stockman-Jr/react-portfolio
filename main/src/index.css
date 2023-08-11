@@ -33,17 +33,18 @@ code {
   opacity: 1;
   width: 300px;
   height: 300px;
+  z-index: 1001;
   transition: all ease-in-out;
   position: absolute;
 }
 
 [data-name=corner-top-left] {
-  top: 0;
-  left: 0;
+  top: 5%;
+  left: 5%;
 }
 
 [data-name=corner-bottom-right] {
-  bottom: 0;
-  right: 0;
+  bottom: 5%;
+  right: 5%;
 }
 
