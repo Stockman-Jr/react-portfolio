@@ -16,6 +16,8 @@
 
 .Social a:hover {
     color: rgb(17, 179, 179);
+  
+    transition: color 0.5s ease-in;
 }
 
 .Social svg {

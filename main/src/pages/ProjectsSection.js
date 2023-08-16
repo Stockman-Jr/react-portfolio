@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "../styles/Sections.module.css";
 import "../index.css";
 import data from "../projects.json";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   DiJavascript1,
   DiPython,
@@ -104,7 +104,7 @@ const ProjectDetails = ({ project }) => {
 };
 
 function ProjectsSection(props) {
-  const { duration, currentPage } = props;
+  const { currentPage } = props;
   const projects = data.projects;
   const [selectedProject, setSelectedProject] = useState(data.projects[0]);
 
@@ -116,20 +116,10 @@ function ProjectsSection(props) {
     setSelectedProject(project);
   };
 
-  const moveRight = {
-    animation: `moveRight ${duration}ms ease-out 0s`,
-  };
-
-  const moveOut = {
-    animation: `moveOut ${duration}ms ease-out 0s`,
-  };
   return (
     <section className={styles.Main}>
       <h1>Projects</h1>
-      <div
-        className={styles.MainContent}
-        style={currentPage === 1 ? moveRight : moveOut}
-      >
+      <div className={styles.MainContent}>
         <div className={styles.DetailsCol}>
           <ProjectDetails project={selectedProject} />
         </div>
