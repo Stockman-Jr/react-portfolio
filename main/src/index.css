@@ -35,16 +35,16 @@ code {
   height: 300px;
   z-index: 1001;
   transition: all ease-in-out;
-  position: absolute;
+  position: fixed;
 }
 
 [data-name=corner-top-left] {
-  top: 5%;
-  left: 5%;
+  top: 5px;
+  left:5px;
 }
 
 [data-name=corner-bottom-right] {
-  bottom: 5%;
-  right: 5%;
+  bottom: 5px;
+  right: 5px;
 }
 
