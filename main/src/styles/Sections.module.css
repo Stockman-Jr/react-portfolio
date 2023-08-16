@@ -208,10 +208,21 @@ h1 {
 /* ABOUT SECTION */
 
 .InnerContainer {
-    width: 85%;
-    background-color: #88888898;
-    border-radius: 15px;
-    height: 80%;
+    width: 90%;
+}
+
+.Skills {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Bars {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    text-align: left;
 }
 
 
