@@ -1,12 +1,21 @@
 {
     "projects": [
         {
-            "name": "Rabbithole",
-            "link": "https://stockman-jr.github.io/rabbithole-publishing/index.html",
-            "repo": "https://github.com/Stockman-Jr/rabbithole-publishing",
-            "info": "Pure HTML/CSS website",
-            "description": "Website for a fictional indie-game publishing company.",
-            "languages": ["HTML", "CSS"]
+            "name": "Mew's Tavern",
+            "link": "https://mews-tavern.herokuapp.com/",
+            "repo": "https://github.com/Stockman-Jr/mews-tavern",
+            "info": "Fullstack app built with React.js and Django REST.",
+            "description": "Fullstack social media inspired app for the Pokémon fans. Features user registration, content sharing, liking, commenting and a PokéDex users can browse and interact with. Created with Django REST, PostgresQL and React.",
+            "languages": ["React", "Django", "Database"]
+        },
+        {
+            "name": "CreativeSpark",
+            "link": "https://creativespark-project4.herokuapp.com/",
+            "repo": "https://github.com/Stockman-Jr/Creative-Spark",
+            "info": "Fullstack site built with Django",
+            "description": "Fullstack site where users can register, participate in drawing challenges and share the results with the community. Created with Django and PostgresQL.",
+            "languages": ["Django", "Database"]
+
         },
         {
             "name": "Word Shuffle",
@@ -25,21 +34,13 @@
             "languages": ["Python"]
         },
         {
-            "name": "CreativeSpark",
-            "link": "https://creativespark-project4.herokuapp.com/",
-            "repo": "https://github.com/Stockman-Jr/Creative-Spark",
-            "info": "Fullstack site built with Django",
-            "description": "Fullstack site where users can register, participate in drawing challenges and share the results with the community.",
-            "languages": ["Django", "Database"]
-
-        },
-        {
-            "name": "Mew's Tavern",
-            "link": "https://mews-tavern.herokuapp.com/",
-            "repo": "https://github.com/Stockman-Jr/mews-tavern",
-            "info": "Fullstack app built with React.js and Django REST.",
-            "description": "Fullstack social media inspired app for the Pokémon fans. Features user registration, content sharing, liking, commenting and a PokéDex users can browse and interact with.",
-            "languages": ["React", "Django", "Database"]
+            "name": "Rabbithole",
+            "link": "https://stockman-jr.github.io/rabbithole-publishing/index.html",
+            "repo": "https://github.com/Stockman-Jr/rabbithole-publishing",
+            "info": "Pure HTML/CSS website",
+            "description": "Website for a fictional indie-game publishing company. Created with HTML5 and CSS3.",
+            "languages": ["HTML", "CSS"]
         }
+
 ]
 } 

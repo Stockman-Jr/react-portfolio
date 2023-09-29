@@ -7,13 +7,33 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(75, 214, 253, 0);
+    /*background: linear-gradient(145deg, rgba(10, 1, 44, 0.445) 0%, rgba(44, 43, 48, 0.445) 100%);*/
     color: white;
+}
+
+.MainBgDown {
+    background-image: url('../assets/divtest2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    background-position: bottom center;
+    background-position-x: center;
+}
+
+.MainBgUp {
+    background-image: url('../assets/forestup1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.BgGrad {
+    background: linear-gradient(to bottom, rgb(1, 6, 14) 20%, rgb(1, 48, 54) 100%);
 }
 
 
 .Content {
-    width: 70%;
-    height: 60%;
+    width: 60%;
+    height: 50%;
     position: absolute;
     top: 15%;
     display: flex;
@@ -23,33 +43,15 @@
     border-radius: 20px;
     border: 2px solid #2b2b2b86;
     padding-top: 10px;
-    background-color: rgba(44, 43, 48, 0.445);
-}
-
-.Portrait {
-    width: 250px;
-    height: 250px;
-    background: linear-gradient(309deg, rgba(89,215,150,1) 0%, rgba(41,199,214,1) 100%);
-    border-radius: 50%;
-    margin-bottom: 12px;
-}
-
-.ImgBox {
-    width: 240px;
-    height: 245px;
-    border-radius: 50%;
-    background-image: url("../assets/portrait3.png");
-    background-size: 110%;
-    background-repeat: no-repeat;
-    object-fit: contain;
-    background-position: center;
-    margin: 0 auto;
+    background-color: rgba(44, 43, 48, 0.2);
+    box-shadow: 0 3px 15px rgba(12, 183, 235, 0.158);
 }
 
 .IntroText h3 {
     color: rgb(255, 255, 255);
-    font-size: 3em;
+    font-size: 5em;
     margin: 0px;
+    text-align: left;
 }
 
 .IntroText hr {
@@ -57,24 +59,27 @@
     margin: 0px;
 }
 
-.IntroText p  {
-    color: rgb(255, 255, 255);
-    font-size: 2em;
-}
-
 .AboutText {
     width: 450px;
     padding: 10px;
     border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
 }
 
 .IntroText {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-left: 20px;
-    font-family: 'Share Tech Mono', monospace;
+
+
+}
+
+.Welcome {
+    background: -webkit-linear-gradient(#0becd9, #011d42);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Pixelify Sans', cursive;
 }
 
 
@@ -130,6 +135,7 @@ h1 {
     font-size: 35px;
 }
 
+
 .Details hr {
     width: 80%;
     height: 1px;
@@ -137,15 +143,10 @@ h1 {
 }
 
 .ProjectList {
-
  width: 30%;
 }
 
-.ProjectList ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+
 
 .ProjectList li {
     list-style: none;
@@ -280,6 +281,7 @@ h1 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .Skills, .Hobbies, .ProjectList, .DetailsCol {
@@ -307,16 +309,17 @@ h1 {
 
   }
 
-  @media screen and (max-width: 915px) {
+  @media screen and (max-width: 970px) {
     .ProjectList li {
     font-size: 20px;
     font-weight: bold;
     }
    }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 800px) {
     .ProjectList li {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     }
    }
+

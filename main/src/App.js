@@ -3,6 +3,7 @@ import "./App.css";
 import PageSections from "./pages/PageSections";
 import ContactMenu from "./components/ContactMenu";
 import SvgBorders from "./components/SvgBorders";
+import Fireflies from "./components/Fireflies";
 
 function App() {
   return (

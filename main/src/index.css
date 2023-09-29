@@ -1,6 +1,6 @@
 :root {
-  --grad-1: rgb(71,119,179);
-  --grad-2: rgb(122,200,87);
+  --grad-1: rgb(21, 201, 177);
+  --grad-2: rgb(8, 94, 82);
 }
 
 
@@ -48,3 +48,13 @@ code {
   right: 5px;
 }
 
+
+.MuiChip-root .MuiChip-icon  {
+  color: #6bffce;
+  font-size: 35px;
+}
+
+.MuiChip-root .MuiChip-label  {
+  color: #ecfff9;
+  font-size: 15px;
+}

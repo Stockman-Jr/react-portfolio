@@ -14,7 +14,7 @@ const SvgBorders = () => {
         >
           <defs>
             <linearGradient id="gradi" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0" class="gradient1">
+              <stop offset="0" className="gradient1">
                 <animate
                   dur="2s"
                   attributeName="offset"
@@ -23,7 +23,7 @@ const SvgBorders = () => {
                   to="0"
                 />
               </stop>
-              <stop offset=".5" class="gradient2">
+              <stop offset=".5" className="gradient2">
                 <animate
                   dur="2s"
                   attributeName="offset"
@@ -32,7 +32,7 @@ const SvgBorders = () => {
                   to=".5"
                 />
               </stop>
-              <stop offset="1" class="gradient1">
+              <stop offset="1" className="gradient1">
                 <animate
                   dur="2s"
                   attributeName="offset"
@@ -51,7 +51,7 @@ const SvgBorders = () => {
           <path
             fill="url('#gradi')"
             d="M 34 25 h 214 l -20 10 H 44 Q 36 35 36 44 v 195 L 26 250 V 33 a 8 8 90 0 1 8 -8 z"
-            class="path"
+            className="path"
           ></path>
         </svg>
       </div>
@@ -65,9 +65,9 @@ const SvgBorders = () => {
         >
           <defs>
             <linearGradient id="gradi" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0" class="gradient1"></stop>
-              <stop offset=".5" class="gradient2"></stop>
-              <stop offset="1" class="gradient1"></stop>
+              <stop offset="0" className="gradient1"></stop>
+              <stop offset=".5" className="gradient2"></stop>
+              <stop offset="1" className="gradient1"></stop>
             </linearGradient>
           </defs>
           <path

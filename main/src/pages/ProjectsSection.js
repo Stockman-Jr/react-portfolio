@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import styles from "../styles/Sections.module.css";
 import "../index.css";
 import data from "../projects.json";
+import Stack from "@mui/material/Stack";
+import "../index.css";
 import { motion } from "framer-motion";
 import {
   DiJavascript1,
@@ -15,13 +17,15 @@ import {
 
 const ProjectList = ({ projects, onProjectClick }) => {
   return (
-    <ul>
-      {projects.map((project, index) => (
-        <li key={index} onClick={() => onProjectClick(project)}>
-          {project.name}
-        </li>
-      ))}
-    </ul>
+    <Stack spacing={2} direction="column" flexWrap="wrap">
+      <ul>
+        {projects.map((project, index) => (
+          <li key={index} onClick={() => onProjectClick(project)}>
+            {project.name}
+          </li>
+        ))}
+      </ul>
+    </Stack>
   );
 };
 
@@ -117,7 +121,7 @@ function ProjectsSection(props) {
   };
 
   return (
-    <section className={styles.Main}>
+    <section className={`${styles.Main} ${styles.BgGrad}`}>
       <h1>Projects</h1>
       <div className={styles.MainContent}>
         <div className={styles.DetailsCol}>
