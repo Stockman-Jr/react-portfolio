@@ -45,11 +45,12 @@ function IntroSection(props) {
 
           <div className={styles.AboutText}>
             <span>
-              I'm a freshly baked junior with an education in full-stack
-              development looking for my first position in tech. I love
-              combining my passion for art & design with my technical skills in
-              order to create visually impactful designs with a focus on user
-              experience.
+              I'm a junior full-stack developer looking for my first position in
+              tech. I love combining my passion for art & design with my
+              technical skills in order to create unique and visually impactful
+              designs with a smooth user experience. <br />
+              I'm hoping to find a role where I can utilize my creativity &
+              passion for both designing and coding.
             </span>
           </div>
         </div>

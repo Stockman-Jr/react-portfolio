@@ -6,13 +6,7 @@ function Section({ id, children }) {
   const inView = useInView(ref);
 
   return (
-    <motion.div
-      ref={ref}
-      id={`section-${id}`}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: inView ? 1 : 0 }}
-      transition={{ duration: 0.8 }}
-    >
+    <motion.div ref={ref} id={`section-${id}`}>
       {children}
     </motion.div>
   );

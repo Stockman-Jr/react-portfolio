@@ -5,6 +5,7 @@ import ProjectsSection from "./ProjectsSection";
 import AboutSection from "./AboutSection";
 import Section from "../components/Section";
 import { useScrollY } from "../hooks/ScrollHook";
+import { motion } from "framer-motion";
 import Fireflies from "../components/Fireflies";
 
 function PageSections() {
@@ -57,14 +58,37 @@ function PageSections() {
   return (
     <>
       <div className={styles.Anchors}>
-        <span
-          onClick={() => handlePageClick(0)}
-          className={currentPage === 0 ? styles.Active : styles.Inactive}
-        ></span>
-        <span
-          onClick={() => handlePageClick(1)}
-          className={currentPage === 1 ? styles.Active : styles.Inactive}
-        ></span>
+        <div className={styles.IntroAnchor}>
+          <span
+            onClick={() => handlePageClick(0)}
+            className={currentPage === 0 ? styles.Active : styles.Inactive}
+          ></span>{" "}
+          <motion.small
+            className={styles.PageName}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: currentPage === 0 ? 1 : 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            {" "}
+            Intro
+          </motion.small>
+        </div>
+
+        <div className={styles.IntroAnchor}>
+          <span
+            onClick={() => handlePageClick(1)}
+            className={currentPage === 1 ? styles.Active : styles.Inactive}
+          ></span>{" "}
+          <motion.small
+            className={styles.PageName}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: currentPage === 1 ? 1 : 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            {" "}
+            Projects
+          </motion.small>
+        </div>
         <span
           onClick={() => handlePageClick(2)}
           className={currentPage === 2 ? styles.Active : styles.Inactive}
@@ -79,7 +103,7 @@ function PageSections() {
         <Section id={1}>
           <ProjectsSection currentPage={currentPage} />
         </Section>
-        <hr className={styles.Divider} />
+
         <Section id={2}>
           <AboutSection currentPage={currentPage} />
         </Section>

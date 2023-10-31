@@ -43,6 +43,7 @@ const Firefly = () => {
 
   React.useEffect(() => {
     moveFirefly();
+    console.log(window.innerWidth);
   }, []);
 
   return (

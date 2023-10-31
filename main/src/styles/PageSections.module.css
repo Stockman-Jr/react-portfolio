@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     background-color: #191a1b;
-    background: linear-gradient(309deg, rgb(24, 27, 27) 0%, rgb(11, 17, 17) 100%);
+    background: linear-gradient(309deg, rgb(0, 22, 49) 0%, rgb(2, 17, 24) 100%);
 }
 
 .Anchors {
@@ -28,6 +28,17 @@
     transform: scale(1);
     transition: all 0.8s ease-in;
   }
+  .IntroAnchor {
+    display: flex;
+  }
+  
+  .PageName {
+    font-size: 12px;
+    position: absolute;
+    left: 30px;
+    color: #08c5d3;
+    margin-top: 15px;
+  }
 
 .Inactive{
     color: white;
@@ -38,7 +49,7 @@
 }
 
 .Active {
-    color: rgb(58, 179, 172);
+    color: #08c5d3;
     font-size: 2em;
     position: sticky;
     z-index: 1000;

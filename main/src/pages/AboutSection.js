@@ -6,7 +6,7 @@ import SkillBar from "../components/SkillBar";
 function AboutSection(props) {
   const { currentPage } = props;
   return (
-    <section className={styles.Main}>
+    <section className={`${styles.Main} ${styles.BgGradReverse}`}>
       <h1>About</h1>
       <div className={styles.InnerContainer}>
         <div className={styles.Skills}>
